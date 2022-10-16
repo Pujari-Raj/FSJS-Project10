@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(19, 11, 9);
+    color: #fff;
+    /* height: 100vh; */
+}
+
+/*nav*/
+
+.logo {
+    margin-top: 25px;
+    margin-right: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin:40px 50px 0px 50px;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 45px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 50vw;
+}
+
+.nav-items {
+    margin-right: 40px;
+}
+
+.call-us{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    /* align-self: flex-end; */
+}
+
+.fa-solid {
+    transform: rotate(320deg);
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.call-us .contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact h3, h4{
+    margin: 0;
+}
+
+.custom-divider {
+    background-color: #fff;
+    height: 1px;
+    width: 74.5vw;
+    position: absolute;
+    right: -52px;
+    top: 100px;
+}
+
+/*Banner*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container {
+    margin-left: 90px;
+    margin-top: 5px;
+}
+
+.left-container h2{
+    font-size: 3.8rem;
+}
+
+.btn{
+    padding: 15px 30px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+.right-1{
+    background-color: rgba(225,225, 225, 0.3);
+    padding: 12px;
+    margin-top: 60px;
+    position: relative;
+    right: 52px;
+}
+
+.right-2{
+    background-color: rgba(225,225, 225, 0.3);
+    padding: 12px;
+    margin-top: 30px;
+    position: relative;
+    right: 350px;
+}
+
+.right-1 .fa-solid, .right-2  .fa-solid{
+    transform: rotate(360deg);
+    padding: 5px 18px;
+    background-color: #fff; 
+    color: #000;  
+    border-radius: 15px;
+    font-size: 23px;
+}
+
+.right-1>.line{
+    height: 50px;
+    /* display: ; */
+    top:151px;
+    left:207px;
+    /* max-height: 20px; */
+    color: white;
+    width: 1px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.right-1>.circle{
+    position: absolute;
+    left:201px;
+    top:200px;
+    background-color: #fff;
+    border-radius: 50px;;
+    height: 15px;
+    width: 15px;
+}
+
+
+.right-2>.line{
+    height: 1px;
+    /* display: ; */
+    top:40px;
+    left:297px;
+    /* max-height: 20px; */
+    color: white;
+    width: 50px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.right-2>.circle{
+    position: absolute;
+    left:340px;
+    top:32px;
+    background-color: #fff;
+    border-radius: 50px;;
+    height: 15px;
+    width: 15px;
+}
+
+nav .fa-solid.fa-bars{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .left-container h2{
+        font-size: 2rem;
+    }
+    .call-us{
+        display: none;
+    }  
+}
+
+@media only screen and (max-width: 768px) {
+
+    .left-container h2{
+        font-size: 1rem;
+    }
+    .nav-list{
+        display: none;
+    }
+    .call-us{
+        display: none;
+    }    
+
+    nav .fa-solid.fa-bars{
+        display: block;
+        transform: none !important;
+    }
+}    
+
+@media only screen and (max-width: 481px) {
+    .logo{
+        margin: 0 !important;
+        /* font-size: 10px; */
+    }
+    .left-container{
+        margin-left: 10px;
+    }
+
+    .right-1 .line{
+        right: 0px !important;
+        top: 104px !important;
+    }
+
+    .right-1 .circle{
+        right: 3px !important;
+        top: 150px !important;
+    }    
+
+    .right-2 .line{
+        top: 50px;
+        left: 200px;
+    }
+
+    .right-2 .circle{
+        top: 43px;
+        left: 240px;
+    }  
+
+    .right-1,
+    .right-2{
+        right: 0;
+        padding: 10px;
+    }
+
+    .right-2{
+        right: 90px;
+    }
+
+    .right-1 h3,
+    .right-2 h3{
+        font-size: 13px;
+    }
+}
